@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "description": "A high-performance laptop suitable for all your computing needs.",
+      "price": 1,
+      "category": "Electronics",
+      "stock": 100
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "description": "A latest-generation smartphone with a stunning display and powerful camera.",
+      "price": 800,
+      "category": "Electronics",
+      "stock": 50
+    },
+    {
+      "id": "3",
+      "name": "Headphones",
+      "description": "Noise-cancelling headphones for an immersive audio experience.",
+      "price": 150,
+      "category": "Accessories",
+      "stock": 200
+    }
+  ]
+}
