@@ -1,0 +1,51 @@
+.product-list-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 16px;
+  margin: auto;
+  margin-top: 20px !important;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.product-list-container mat-form-field {
+  min-width: 250px;
+  flex: 1;
+}
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.paginator {
+    border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mat-mdc-form-field {
+  font-size: 15px;
+  width: 100%;
+}
+
+.mat-mdc-mini-fab {
+  margin-right: 6px;
+}
+
+.actions-cell td {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+}

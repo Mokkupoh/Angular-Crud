@@ -1,22 +1,75 @@
 <mat-card class="edit-card">
   <mat-card-title>Edit Product</mat-card-title>
-  <mat-card-content style="padding-top: 20px;">
-    <form ngSubmit (ngSubmit)="updateProduct()" class="edit-form" #editForm="ngForm">
+  <mat-card-content style="padding-top: 20px">
+    <form (ngSubmit)="updateProduct()" class="edit-form" #editForm="ngForm">
+      <!-- NAME -->
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Name</mat-label>
-        <input matInput [(ngModel)]="product.name" name="name" required />
+
+        <input matInput name="name" [(ngModel)]="product.name" #nameModel="ngModel" required />
+
+        @if (nameModel.invalid && nameModel.touched) {
+        <mat-error>Name is <strong>required</strong></mat-error>
+        }
       </mat-form-field>
+
+      <!-- PRICE -->
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Price</mat-label>
-        <input matInput type="number" [(ngModel)]="product.price" name="price" required />
+
+        <input
+          matInput
+          type="number"
+          name="price"
+          [(ngModel)]="product.price"
+          #priceModel="ngModel"
+          required
+          min="0"
+        />
+
+        @if (priceModel.errors?.['required'] && priceModel.touched) {
+        <mat-error>Price is <strong>required</strong></mat-error>
+        } @if (priceModel.errors?.['min'] && priceModel.touched) {
+        <mat-error>Price cannot be <strong>negative</strong></mat-error>
+        }
       </mat-form-field>
+
+      <!-- CATEGORY -->
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Category</mat-label>
-        <input matInput [(ngModel)]="product.category" name="category" required />
+
+        <input
+          matInput
+          name="category"
+          [(ngModel)]="product.category"
+          #categoryModel="ngModel"
+          required
+        />
+
+        @if (categoryModel.invalid && categoryModel.touched) {
+        <mat-error>Category is <strong>required</strong></mat-error>
+        }
       </mat-form-field>
+
+      <!-- STOCK -->
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Stock</mat-label>
-        <input matInput type="number" [(ngModel)]="product.stock" name="stock" required />
+
+        <input
+          matInput
+          type="number"
+          name="stock"
+          [(ngModel)]="product.stock"
+          #stockModel="ngModel"
+          required
+          min="0"
+        />
+
+        @if (stockModel.errors?.['required'] && stockModel.touched) {
+        <mat-error>Stock is <strong>required</strong></mat-error>
+        } @if (stockModel.errors?.['min'] && stockModel.touched) {
+        <mat-error>Stock cannot be <strong>negative</strong></mat-error>
+        }
       </mat-form-field>
       <div class="buttons">
         <button

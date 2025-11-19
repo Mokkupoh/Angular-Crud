@@ -2,27 +2,795 @@
   "products": [
     {
       "id": "1",
-      "name": "Laptop",
-      "description": "A high-performance laptop suitable for all your computing needs.",
-      "price": 1,
+      "name": "Tablet",
+      "description": "A high-quality tablet with excellent performance and durability.",
+      "price": 1625.22,
       "category": "Electronics",
-      "stock": 100
+      "stock": 251
     },
     {
       "id": "2",
-      "name": "Smartphone",
-      "description": "A latest-generation smartphone with a stunning display and powerful camera.",
-      "price": 800,
-      "category": "Electronics",
-      "stock": 50
+      "name": "Power Bank",
+      "description": "A high-quality power bank with excellent performance and durability.",
+      "price": 1215.96,
+      "category": "Office",
+      "stock": 355
     },
     {
       "id": "3",
-      "name": "Headphones",
-      "description": "Noise-cancelling headphones for an immersive audio experience.",
-      "price": 150,
+      "name": "Laptop",
+      "description": "A high-quality laptop with excellent performance and durability.",
+      "price": 392.41,
+      "category": "Teste",
+      "stock": 336
+    },
+    {
+      "id": "4",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1871.33,
+      "category": "Office",
+      "stock": 263
+    },
+    {
+      "id": "6",
+      "name": "Tablet",
+      "description": "A high-quality tablet with excellent performance and durability.",
+      "price": 397.71,
+      "category": "Gadgets",
+      "stock": 348
+    },
+    {
+      "id": "7",
+      "name": "Printer",
+      "description": "A high-quality printer with excellent performance and durability.",
+      "price": 973.73,
+      "category": "Electronics",
+      "stock": 412
+    },
+    {
+      "id": "8",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 482.32,
+      "category": "Computers",
+      "stock": 82
+    },
+    {
+      "id": "9",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1168.02,
+      "category": "Computers",
+      "stock": 80
+    },
+    {
+      "id": "10",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1036.63,
+      "category": "Teste",
+      "stock": 401
+    },
+    {
+      "id": "11",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 536.15,
+      "category": "Electronics",
+      "stock": 52
+    },
+    {
+      "id": "12",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 155.12,
+      "category": "Teste",
+      "stock": 148
+    },
+    {
+      "id": "13",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 90.84,
+      "category": "Electronics",
+      "stock": 350
+    },
+    {
+      "id": "14",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1031.33,
       "category": "Accessories",
-      "stock": 200
+      "stock": 296
+    },
+    {
+      "id": "15",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1140.28,
+      "category": "Accessories",
+      "stock": 365
+    },
+    {
+      "id": "16",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 258.58,
+      "category": "Office",
+      "stock": 179
+    },
+    {
+      "id": "17",
+      "name": "Printer",
+      "description": "A high-quality printer with excellent performance and durability.",
+      "price": 605.89,
+      "category": "Accessories",
+      "stock": 308
+    },
+    {
+      "id": "18",
+      "name": "SSD Drive",
+      "description": "A high-quality ssd drive with excellent performance and durability.",
+      "price": 1459.36,
+      "category": "Teste",
+      "stock": 397
+    },
+    {
+      "id": "19",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 164.35,
+      "category": "Gadgets",
+      "stock": 312
+    },
+    {
+      "id": "20",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 305.91,
+      "category": "Accessories",
+      "stock": 60
+    },
+    {
+      "id": "21",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 712.79,
+      "category": "Gadgets",
+      "stock": 15
+    },
+    {
+      "id": "22",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 298.32,
+      "category": "Electronics",
+      "stock": 90
+    },
+    {
+      "id": "23",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 1767.02,
+      "category": "Gadgets",
+      "stock": 161
+    },
+    {
+      "id": "24",
+      "name": "SSD Drive",
+      "description": "A high-quality ssd drive with excellent performance and durability.",
+      "price": 1445.42,
+      "category": "Electronics",
+      "stock": 17
+    },
+    {
+      "id": "25",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1495.26,
+      "category": "Gadgets",
+      "stock": 119
+    },
+    {
+      "id": "26",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 988.81,
+      "category": "Computers",
+      "stock": 155
+    },
+    {
+      "id": "27",
+      "name": "Laptop",
+      "description": "A high-quality laptop with excellent performance and durability.",
+      "price": 1131.15,
+      "category": "Computers",
+      "stock": 41
+    },
+    {
+      "id": "28",
+      "name": "Tablet",
+      "description": "A high-quality tablet with excellent performance and durability.",
+      "price": 1804.24,
+      "category": "Gadgets",
+      "stock": 38
+    },
+    {
+      "id": "29",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1043.33,
+      "category": "Teste",
+      "stock": 350
+    },
+    {
+      "id": "30",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 827.73,
+      "category": "Gadgets",
+      "stock": 43
+    },
+    {
+      "id": "31",
+      "name": "Printer",
+      "description": "A high-quality printer with excellent performance and durability.",
+      "price": 300.37,
+      "category": "Computers",
+      "stock": 405
+    },
+    {
+      "id": "32",
+      "name": "Keyboard",
+      "description": "A high-quality keyboard with excellent performance and durability.",
+      "price": 221.35,
+      "category": "Gadgets",
+      "stock": 17
+    },
+    {
+      "id": "33",
+      "name": "Speaker",
+      "description": "A high-quality speaker with excellent performance and durability.",
+      "price": 340.43,
+      "category": "Electronics",
+      "stock": 406
+    },
+    {
+      "id": "34",
+      "name": "Laptop",
+      "description": "A high-quality laptop with excellent performance and durability.",
+      "price": 1412.43,
+      "category": "Accessories",
+      "stock": 377
+    },
+    {
+      "id": "35",
+      "name": "Printer",
+      "description": "A high-quality printer with excellent performance and durability.",
+      "price": 1935.88,
+      "category": "Teste",
+      "stock": 257
+    },
+    {
+      "id": "36",
+      "name": "CPU",
+      "description": "A high-quality cpu with excellent performance and durability.",
+      "price": 1014.82,
+      "category": "Computers",
+      "stock": 344
+    },
+    {
+      "id": "37",
+      "name": "Headphones",
+      "description": "A high-quality headphones with excellent performance and durability.",
+      "price": 1778.05,
+      "category": "Office",
+      "stock": 142
+    },
+    {
+      "id": "38",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 1799.55,
+      "category": "Gadgets",
+      "stock": 230
+    },
+    {
+      "id": "39",
+      "name": "Keyboard",
+      "description": "A high-quality keyboard with excellent performance and durability.",
+      "price": 1157.51,
+      "category": "Electronics",
+      "stock": 187
+    },
+    {
+      "id": "40",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1951.73,
+      "category": "Computers",
+      "stock": 45
+    },
+    {
+      "id": "41",
+      "name": "Monitor",
+      "description": "A high-quality monitor with excellent performance and durability.",
+      "price": 960.82,
+      "category": "Electronics",
+      "stock": 57
+    },
+    {
+      "id": "42",
+      "name": "Monitor",
+      "description": "A high-quality monitor with excellent performance and durability.",
+      "price": 872.5,
+      "category": "Teste",
+      "stock": 473
+    },
+    {
+      "id": "43",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 162.82,
+      "category": "Gadgets",
+      "stock": 3
+    },
+    {
+      "id": "44",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 591.54,
+      "category": "Accessories",
+      "stock": 285
+    },
+    {
+      "id": "45",
+      "name": "Power Bank",
+      "description": "A high-quality power bank with excellent performance and durability.",
+      "price": 1429.11,
+      "category": "Office",
+      "stock": 139
+    },
+    {
+      "id": "46",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 1275.26,
+      "category": "Teste",
+      "stock": 174
+    },
+    {
+      "id": "47",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 340.14,
+      "category": "Computers",
+      "stock": 207
+    },
+    {
+      "id": "48",
+      "name": "Headphones",
+      "description": "A high-quality headphones with excellent performance and durability.",
+      "price": 188.47,
+      "category": "Teste",
+      "stock": 230
+    },
+    {
+      "id": "49",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 969.51,
+      "category": "Office",
+      "stock": 16
+    },
+    {
+      "id": "50",
+      "name": "Smartwatch",
+      "description": "A high-quality smartwatch with excellent performance and durability.",
+      "price": 372.82,
+      "category": "Accessories",
+      "stock": 2
+    },
+    {
+      "id": "51",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 1621.5,
+      "category": "Teste",
+      "stock": 248
+    },
+    {
+      "id": "52",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 1509.79,
+      "category": "Computers",
+      "stock": 77
+    },
+    {
+      "id": "53",
+      "name": "Headphones",
+      "description": "A high-quality headphones with excellent performance and durability.",
+      "price": 811.59,
+      "category": "Computers",
+      "stock": 435
+    },
+    {
+      "id": "54",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 571.99,
+      "category": "Computers",
+      "stock": 429
+    },
+    {
+      "id": "55",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1426.79,
+      "category": "Accessories",
+      "stock": 24
+    },
+    {
+      "id": "56",
+      "name": "Keyboard",
+      "description": "A high-quality keyboard with excellent performance and durability.",
+      "price": 121.4,
+      "category": "Electronics",
+      "stock": 323
+    },
+    {
+      "id": "57",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 1119.72,
+      "category": "Electronics",
+      "stock": 141
+    },
+    {
+      "id": "58",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 803.56,
+      "category": "Electronics",
+      "stock": 16
+    },
+    {
+      "id": "59",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 1669.18,
+      "category": "Electronics",
+      "stock": 427
+    },
+    {
+      "id": "60",
+      "name": "GPU",
+      "description": "A high-quality gpu with excellent performance and durability.",
+      "price": 854.51,
+      "category": "Accessories",
+      "stock": 443
+    },
+    {
+      "id": "61",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 647.47,
+      "category": "Teste",
+      "stock": 199
+    },
+    {
+      "id": "62",
+      "name": "Laptop",
+      "description": "A high-quality laptop with excellent performance and durability.",
+      "price": 129.19,
+      "category": "Gadgets",
+      "stock": 169
+    },
+    {
+      "id": "63",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 1086.01,
+      "category": "Electronics",
+      "stock": 134
+    },
+    {
+      "id": "64",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 507.54,
+      "category": "Teste",
+      "stock": 196
+    },
+    {
+      "id": "65",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1542.71,
+      "category": "Office",
+      "stock": 163
+    },
+    {
+      "id": "66",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 46.39,
+      "category": "Electronics",
+      "stock": 408
+    },
+    {
+      "id": "67",
+      "name": "RAM Module",
+      "description": "A high-quality ram module with excellent performance and durability.",
+      "price": 1758.16,
+      "category": "Computers",
+      "stock": 324
+    },
+    {
+      "id": "68",
+      "name": "CPU",
+      "description": "A high-quality cpu with excellent performance and durability.",
+      "price": 222.4,
+      "category": "Computers",
+      "stock": 355
+    },
+    {
+      "id": "69",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 758.11,
+      "category": "Office",
+      "stock": 281
+    },
+    {
+      "id": "70",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 898.67,
+      "category": "Computers",
+      "stock": 331
+    },
+    {
+      "id": "71",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1039.8,
+      "category": "Gadgets",
+      "stock": 277
+    },
+    {
+      "id": "72",
+      "name": "Mouse",
+      "description": "A high-quality mouse with excellent performance and durability.",
+      "price": 1802.62,
+      "category": "Teste",
+      "stock": 128
+    },
+    {
+      "id": "73",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 85.66,
+      "category": "Office",
+      "stock": 477
+    },
+    {
+      "id": "74",
+      "name": "Smartwatch",
+      "description": "A high-quality smartwatch with excellent performance and durability.",
+      "price": 1276.89,
+      "category": "Computers",
+      "stock": 45
+    },
+    {
+      "id": "75",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 113.8,
+      "category": "Accessories",
+      "stock": 467
+    },
+    {
+      "id": "76",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 914.29,
+      "category": "Teste",
+      "stock": 227
+    },
+    {
+      "id": "77",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 1424.78,
+      "category": "Office",
+      "stock": 61
+    },
+    {
+      "id": "78",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 378.3,
+      "category": "Gadgets",
+      "stock": 458
+    },
+    {
+      "id": "79",
+      "name": "CPU",
+      "description": "A high-quality cpu with excellent performance and durability.",
+      "price": 1420.92,
+      "category": "Office",
+      "stock": 159
+    },
+    {
+      "id": "80",
+      "name": "Microphone",
+      "description": "A high-quality microphone with excellent performance and durability.",
+      "price": 631.62,
+      "category": "Electronics",
+      "stock": 492
+    },
+    {
+      "id": "81",
+      "name": "Power Bank",
+      "description": "A high-quality power bank with excellent performance and durability.",
+      "price": 887.03,
+      "category": "Teste",
+      "stock": 416
+    },
+    {
+      "id": "82",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 114.3,
+      "category": "Gadgets",
+      "stock": 319
+    },
+    {
+      "id": "83",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 1691.51,
+      "category": "Teste",
+      "stock": 316
+    },
+    {
+      "id": "84",
+      "name": "Power Bank",
+      "description": "A high-quality power bank with excellent performance and durability.",
+      "price": 1888.9,
+      "category": "Accessories",
+      "stock": 151
+    },
+    {
+      "id": "85",
+      "name": "Monitor",
+      "description": "A high-quality monitor with excellent performance and durability.",
+      "price": 1456.7,
+      "category": "Gadgets",
+      "stock": 188
+    },
+    {
+      "id": "86",
+      "name": "Headphones",
+      "description": "A high-quality headphones with excellent performance and durability.",
+      "price": 377.37,
+      "category": "Teste",
+      "stock": 143
+    },
+    {
+      "id": "87",
+      "name": "Gamepad",
+      "description": "A high-quality gamepad with excellent performance and durability.",
+      "price": 820.11,
+      "category": "Electronics",
+      "stock": 298
+    },
+    {
+      "id": "88",
+      "name": "Printer",
+      "description": "A high-quality printer with excellent performance and durability.",
+      "price": 262.77,
+      "category": "Electronics",
+      "stock": 163
+    },
+    {
+      "id": "89",
+      "name": "Keyboard",
+      "description": "A high-quality keyboard with excellent performance and durability.",
+      "price": 1440.44,
+      "category": "Office",
+      "stock": 111
+    },
+    {
+      "id": "90",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 1118.59,
+      "category": "Computers",
+      "stock": 153
+    },
+    {
+      "id": "91",
+      "name": "Headphones",
+      "description": "A high-quality headphones with excellent performance and durability.",
+      "price": 1389.88,
+      "category": "Electronics",
+      "stock": 133
+    },
+    {
+      "id": "92",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1814.25,
+      "category": "Computers",
+      "stock": 239
+    },
+    {
+      "id": "93",
+      "name": "CPU",
+      "description": "A high-quality cpu with excellent performance and durability.",
+      "price": 478.99,
+      "category": "Computers",
+      "stock": 463
+    },
+    {
+      "id": "94",
+      "name": "USB Cable",
+      "description": "A high-quality usb cable with excellent performance and durability.",
+      "price": 22.8,
+      "category": "Electronics",
+      "stock": 351
+    },
+    {
+      "id": "95",
+      "name": "Keyboard",
+      "description": "A high-quality keyboard with excellent performance and durability.",
+      "price": 801.6,
+      "category": "Gadgets",
+      "stock": 388
+    },
+    {
+      "id": "96",
+      "name": "Smartphone",
+      "description": "A high-quality smartphone with excellent performance and durability.",
+      "price": 1614.75,
+      "category": "Gadgets",
+      "stock": 358
+    },
+    {
+      "id": "97",
+      "name": "Webcam",
+      "description": "A high-quality webcam with excellent performance and durability.",
+      "price": 1008.36,
+      "category": "Computers",
+      "stock": 114
+    },
+    {
+      "id": "98",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 265.38,
+      "category": "Office",
+      "stock": 265
+    },
+    {
+      "id": "99",
+      "name": "CPU",
+      "description": "A high-quality cpu with excellent performance and durability.",
+      "price": 108.76,
+      "category": "Computers",
+      "stock": 168
+    },
+    {
+      "id": "100",
+      "name": "Router",
+      "description": "A high-quality router with excellent performance and durability.",
+      "price": 1571.66,
+      "category": "Accessories",
+      "stock": 383
     }
   ]
 }
