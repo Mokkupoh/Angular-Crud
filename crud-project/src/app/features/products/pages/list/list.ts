@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-import { Product } from '../../models/product.model';
-import { Router } from '@angular/router';
-import { ProductService } from '../../services/product.service';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialog } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
-import { MatButton, MatButtonModule } from '@angular/material/button';
+import { Edit } from '../../edit/edit';
+import { Product } from '../../models/product.model';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-list',
@@ -16,7 +17,7 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
 export class List {
   products: Product[] = [];
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(private dialog: MatDialog,private productService: ProductService) {}
 
   ngOnInit() {
     this.loadProducts();
@@ -28,8 +29,21 @@ export class List {
     });
   }
 
-  editProduct(id: number) {
-    this.router.navigate(['/products/edit', id]);
+  openEditDialog(product: Product) {
+    const dialogRef = this.dialog.open(Edit, {
+      width: '300px',
+      data: product,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
+        this.loadProducts();
+      }
+    });
+  }
+
+  editProduct(product: Product) {
+    this.openEditDialog(product); 
   }
 
   deleteProduct(id: number) {
