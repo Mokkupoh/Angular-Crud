@@ -1,5 +1,5 @@
 <mat-card class="edit-card">
-  <mat-card-title>Edit Product</mat-card-title>
+  <mat-card-title>{{ isCreateMode ? 'Create Product' : 'Edit Product' }}</mat-card-title>
   <mat-card-content style="padding-top: 20px">
     <form (ngSubmit)="updateProduct()" class="edit-form" #editForm="ngForm">
       <!-- NAME -->
@@ -75,10 +75,10 @@
         <button
           mat-raised-button
           color="primary"
-          (click)="updateProduct()"
+          (click)="isCreateMode ? createProduct() : updateProduct()"
           [disabled]="!editForm.form.valid"
         >
-          Save
+          {{ isCreateMode ? 'Create' : 'Save' }}
         </button>
         <button mat-raised-button color="warn" (click)="cancelEdit()">Cancel</button>
       </div>

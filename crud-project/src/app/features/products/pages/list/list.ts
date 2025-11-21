@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { Edit } from '../../edit/edit';
+import { Edit } from '../../components/edit/edit';
 import { Product } from '../../models/product.model';
 import { ProductService } from '../../services/product.service';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -31,7 +31,7 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
     MatSelectModule,
     MatOptionModule,
     FormsModule,
-    MatSortModule
+    MatSortModule,
   ],
   templateUrl: './list.html',
   styleUrl: './list.css',
@@ -56,9 +56,9 @@ export class List {
   }
 
   ngAfterViewInit() {
-  this.dataSource.paginator = this.paginator;
-  this.dataSource.sort = this.sort;
-}
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
 
   loadProducts() {
     this.productService.getAll().subscribe((data) => {
@@ -74,6 +74,18 @@ export class List {
       data: product,
     });
 
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
+        this.loadProducts();
+      }
+    });
+  }
+
+  opencreateDialog() {
+    const dialogRef = this.dialog.open(Edit, {
+      width: '350px',
+      data: { name: '', price: 0, category: '', stock: 0 },
+    });
     dialogRef.afterClosed().subscribe((result) => {
       if (result) {
         this.loadProducts();
@@ -102,6 +114,10 @@ export class List {
 
   editProduct(product: Product) {
     this.openEditDialog(product);
+  }
+
+  createProduct() {
+    this.opencreateDialog();
   }
 
   deleteProduct(id: number) {

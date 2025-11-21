@@ -791,6 +791,34 @@
       "price": 1571.66,
       "category": "Accessories",
       "stock": 383
+    },
+    {
+      "id": 0,
+      "name": "",
+      "category": "",
+      "price": 0,
+      "stock": 0
+    },
+    {
+      "id": 0,
+      "name": "Teste",
+      "price": 1,
+      "category": "Electronics",
+      "stock": 3
+    },
+    {
+      "id": 0,
+      "name": "tes1",
+      "price": 123,
+      "category": "Electronics",
+      "stock": 123
+    },
+    {
+      "id": "637a",
+      "name": "tes4",
+      "price": 2,
+      "category": "Teste",
+      "stock": 12
     }
   ]
 }

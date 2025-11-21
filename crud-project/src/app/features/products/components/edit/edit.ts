@@ -6,8 +6,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { Product } from '../models/product.model';
-import { ProductService } from '../services/product.service';
+import { Product } from '../../models/product.model';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-edit',
@@ -24,18 +24,26 @@ import { ProductService } from '../services/product.service';
 })
 export class Edit {
   product: Product;
+  isCreateMode: boolean = false;
 
   constructor(
     private dialogRef: MatDialogRef<Edit>,
     private productService: ProductService,
     @Inject(MAT_DIALOG_DATA) public data: Product
   ) {
-    this.product = { ...data }; 
+    this.product = { ...data };
+    this.isCreateMode = !data || !data.id;
+  }
+
+  createProduct() {
+    this.productService.create(this.product).subscribe(() => {
+      this.dialogRef.close(this.product);
+    });
   }
 
   updateProduct() {
     this.productService.update(this.product.id, this.product).subscribe(() => {
-    this.dialogRef.close(this.product);
+      this.dialogRef.close(this.product);
     });
   }
 
